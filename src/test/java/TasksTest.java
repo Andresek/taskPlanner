@@ -10,7 +10,7 @@ public class TasksTest {
 
         todos.add(simpleTask);
 
-        boolean expected  = true;
+        boolean expected = true;
         boolean actual = simpleTask.matches("Стирка");
 
         Assertions.assertEquals(expected, actual);
@@ -19,13 +19,13 @@ public class TasksTest {
     @Test
     public void matchesEpic() {
 
-        String[] subtasks = { "Молоко", "Яйца", "Хлеб" };
+        String[] subtasks = {"Молоко", "Яйца", "Хлеб"};
         Epic epic = new Epic(15, subtasks);
         Todos todos = new Todos();
 
         todos.add(epic);
 
-        boolean expected  = true;
+        boolean expected = true;
         boolean actual = epic.matches("Хлеб");
 
         Assertions.assertEquals(expected, actual);
@@ -39,7 +39,7 @@ public class TasksTest {
 
         todos.add(meeting);
 
-        boolean expected  = true;
+        boolean expected = true;
         boolean actual = meeting.matches("Сбор урожая");
 
         Assertions.assertEquals(expected, actual);
@@ -53,12 +53,11 @@ public class TasksTest {
 
         todos.add(meeting);
 
-        boolean expected  = true;
+        boolean expected = true;
         boolean actual = meeting.matches("Светлый путь");
 
         Assertions.assertEquals(expected, actual);
     }
-
 
 
 }

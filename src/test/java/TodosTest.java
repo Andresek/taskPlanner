@@ -31,7 +31,7 @@ public class TodosTest {
 
 
     @Test
-    public void search1() {
+    public void searchWhenOneTask() {
 
         SimpleTask task1 = new SimpleTask(1, "завтрак");
         SimpleTask task2 = new SimpleTask(2, "обед");
@@ -50,7 +50,7 @@ public class TodosTest {
     }
 
     @Test
-    public void search2() {
+    public void searchWhenOverOneTask() {
 
         SimpleTask task1 = new SimpleTask(1, "завтрак");
         SimpleTask task2 = new SimpleTask(2, "обед");
@@ -69,7 +69,7 @@ public class TodosTest {
     }
 
     @Test
-    public void search3() {
+    public void searchNotTask() {
 
         SimpleTask task1 = new SimpleTask(1, "завтрак");
         SimpleTask task2 = new SimpleTask(2, "обед");
